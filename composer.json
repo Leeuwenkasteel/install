@@ -1,0 +1,39 @@
+{
+    "name": "leeuwenkasteel/install",
+    "description": "Install Leeuwenkasteel packages",
+	"type": "library",
+    "license": "MIT",
+    "version" : "1.0",
+    "autoload": {
+      "psr-4": {
+        "Leeuwenkasteel\\Install\\": "src/"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "Leeuwenkasteel\\Install\\Tests\\": "tests/"
+      }
+    },
+	"require": {
+        "php": "^8.1",
+        "livewire/livewire": "^3.0"
+    },
+    "authors": [
+      {
+        "role": "Developer",
+        "name": "Sanne van Leeuwen",
+        "email": "sanne@leeuwenkasteel.nl",
+        "homepage": "https://www.leeuwenkasteel.nl/"
+      }
+    ],
+	"require-dev": {},
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+	"extra": {
+        "laravel": {
+			"providers": [
+				"Leeuwenkasteel\\Install\\InstallPackageServiceProvider"
+			]
+        }
+    }
+}
