@@ -20,32 +20,30 @@ Leeuwenkasteel\Install\InstallPackageServiceProvider::class,
 ```
 
 3. Voeg toe aan composer.json:
-   require:
-   ```
-"livewire/livewire": "^3.6"
 ```
-
-   require-dev:
-   ```
-"leeuwenkasteel/install": "^1.0"
-```
-
-En voeg onder aan de pagina toe:
-  ```
+"require": {
+    "livewire/livewire": "^3.6"
+},
+"require-dev": {
+    "leeuwenkasteel/install": "^1.0"
+},
 "repositories": [
-        {
-            "type": "path",
-            "url": "packages/leeuwenkasteel/install",
-            "options": {
-                "symlink": true
-            }
-        },
+    {
+        "type": "path",
+        "url": "packages/leeuwenkasteel/install",
+        "options": {
+            "symlink": true
+        }
+    }
 ]
-  ```
+```
 
 4. ga naar:
+```
 https::url.nl/install
 ```
+
+
 
 
 
