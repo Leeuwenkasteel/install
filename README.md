@@ -37,11 +37,16 @@ Leeuwenkasteel\Install\InstallPackageServiceProvider::class,
     }
 ]
 ```
-
-4. ga naar:
+4. Voer in een cmd het volgende command uit:
+   ```
+   composer dumpautoload
+   composer update
+    ```
+6. ga naar:
 ```
 https::url.nl/install
 ```
+
 
 
 
